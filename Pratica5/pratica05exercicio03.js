@@ -1,11 +1,10 @@
-function start() {
-    var form = document.getElementByID("formulario");
-    var captura = form.numero.value;
-    var test = captura % 2;
-    if (test == 0){
-        form.resposta.value = "Número Par";
+function ImpaPar() {
+    var from=document.getElementById("primeiroNumero").value;
+    var n1 = from % 2;
+    if (n1 == 0){
+        document.getElementById("resposta").innerHTML= "PAR";
     } else {
-        form.resposta.value = "Número Impar";
+        document.getElementById("resposta").innerHTML= "IMPAR";
     }
+    document.getElementById("resposta").innerHTML += "---- " + from;
 }
- 
